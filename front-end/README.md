@@ -17,3 +17,11 @@ Receive uplifting messages when the order is ready
 | **QR Code Generator**     | After placing order, user gets order ID as QR     |
 | **Order Status Tracking** | Real-time order updates via Firestore listener    |
 | **Pickup Notification**   | “Your coffee is ready ☀️” screen (multi-language) |
+
+🖼️ UI Flow
+
+/                     → Language selection & “Start Order”
+/order                → Voice capture screen
+/order/confirmation   → Order summary + QR Code
+/track/:orderId       → Order status live page
+/order/ready          → Uplifting pickup message (optional)
