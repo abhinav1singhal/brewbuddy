@@ -25,3 +25,16 @@ Receive uplifting messages when the order is ready
 /order/confirmation   → Order summary + QR Code
 /track/:orderId       → Order status live page
 /order/ready          → Uplifting pickup message (optional)
+
+🔌 Backend Integration
+| Frontend Action    | Backend Endpoint                                       |
+| ------------------ | ------------------------------------------------------ |
+| Send voice input   | `POST /api/order`                                      |
+| Poll order status  | `GET /api/order/:id/status` or Firestore stream        |
+| Get pickup message | `GET /api/order/:id/message` or subscribe to Firestore |
+
+Data Payload from FE to BE
+{
+  "voiceInput": "One cappuccino and a blueberry muffin",
+  "language": "en-US"
+}
