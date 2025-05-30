@@ -38,3 +38,16 @@ Data Payload from FE to BE
   "voiceInput": "One cappuccino and a blueberry muffin",
   "language": "en-US"
 }
+
+
+2. 👨‍🍳 Shop Owner Frontend – Order & Trend Management
+🔧 Purpose:
+Provide the baristas / manager with an operational dashboard to:
+
+View incoming orders in real time
+
+Update status (preparing → ready)
+
+Review trends (best-sellers, slow days)
+
+Improve workflow and customer service
